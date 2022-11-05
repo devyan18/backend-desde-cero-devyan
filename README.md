@@ -1,10 +1,9 @@
 # Backend desde cero
 
-Actualmente la arquitectura cliente-servidor es de las más usadas y de las que más trabajo ofrece a nivel mundial, teniendo eso en cuenta, me propuse a crear este curso para aprender el apartado de `servidor` desde cero. Espero les sea de utilidad y les sea de ayuda tanto para los que solo quieren aprender por hobbie, como a los que pretenden comenzar una carrera profesional en el sector de la programación.
+#### Actualmente la arquitectura cliente-servidor es de las más usadas y de las que más trabajo ofrece a nivel mundial, teniendo eso en cuenta, me propuse a crear este curso para aprender el apartado de "servidor" desde cero. Espero les sea de utilidad y les sea de ayuda tanto para los que solo quieren aprender por hobbie, como a los que pretenden comenzar una carrera profesional en el sector de la programación.
 
-----
 
-### Requerimientos previos
+### Requisitos previos
 
 * `JavaScript`: Es necesario tener ciertas nociones en este lenguaje de programación, pero no será necesario un manejo muy elevado del mismo, ya que se explicarán a detalle cada uno de los aspectos que se verán a lo largo del curso.
 
@@ -14,95 +13,108 @@ Actualmente la arquitectura cliente-servidor es de las más usadas y de las que 
 
 ---
 # Indice: 
-
-### Requisitos previos
-* `1` - JavaScript || ¿Dónde lo puedo aprender?
-* `2` - HTML || ¿Dónde lo puedo aprender?
-* `3` - CSS || ¿Dónde lo puedo aprender?
-* `4` - Console || ¿Dónde lo puedo aprender?
-
 ### ¿Qué es nodeJS?
-* `5` - node y npm (package.json, librerías y tipos de librerías)
-* `6` - Scripts de package.json
-* `7` - Versionamiento de las librerías
-* `8` - ¿CommonJS o ESModules?
+* [node](https://nodejs.org/en/) y [npm](https://www.npmjs.com) (package.json, librerías y tipos de librerías)
+* Scripts de package.json
+* Versionamiento de las librerías
+* ¿CommonJS o ESModules?
 
 ### Trabajemos cómodos
-* `9` - Atájos de teclado básicos
-* `10` - Configuración y extensiones de `vscode`
+* Atájos de teclado básicos
+* Configuración y extensiones de [vscode](https://code.visualstudio.com)
 
 ### Nuestro primer CLI
-* `11` - ¿Qué es un `CLI`?
-* `12` - ¿Qué podemos hacer con un `CLI`?
-* `13` - Conocemos `commander` e `inquirer`
-* `14` - Creamos nuestro primer `CLI`
-* `15` - Subimos nuestro proyecto a npm
+* ¿Qué es un `CLI`?
+* ¿Qué podemos hacer con un `CLI`?
+* Conocemos [inquirer](https://www.npmjs.com/package/inquirer) y [commander](https://www.npmjs.com/package/commander)
+* Creamos nuestro primer `CLI`
+* Subimos nuestro proyecto a npm
 
-### El framework de `Express`
-* `16` - Rutas básicas
-* `17` - Verbos HTTP
-* `18` - Diversificación de rutas
-* `19` - Controladores
-* `20` - Códigos de estado
-* `21` - Middlewares
-* `22` - No reinventemos la rueda
-* `23` - Servicios reutilizables
+### El framework de Express
+* ¿Qué es [express](https://expressjs.com/es/)?
+* Rutas básicas
+* Verbos HTTP
+* Diversificación de rutas
+* Controladores
+* Códigos de estado
+* Middlewares
+* No reinventemos la rueda
+* Servicios reutilizables
 
 ### No seamos sucios
-* `24` - ¿Qué es un linter?
-* `25` - ¿Cuál debería usar?
-* `26` - Un poco de orden con `ESLint`
+* ¿Qué es un linter?
+* ¿Cuál debería usar?
+* Un poco de orden con [ESLint](https://eslint.org)
 
 ### Persistencia de datos
-* `27` - Conexión a mongodb (con `mongoose`)
-* `28` - Configuración de variables de entorno
-* `29` - Modelos y esquemas de mongoose
-* `30` - Rutas básicas con uso de bases de datos
-* `31` - Relaciones entre modelos
-* `32` - Triggers de los modelos en mongoose
+* Conexión a mongodb (con [mongoose](https://mongoosejs.com))
+* Configuración de variables de entorno
+* Modelos y esquemas de mongoose
+* Rutas básicas con uso de bases de datos
+* Relaciones entre modelos
+* Triggers de los modelos en mongoose
 
 ### Validaciones de datos en las rutas
-* `33` - Ejemplos con `express-validator`
-* `34` - Ejemplos con `zod`
+* Ejemplos con [express-validator](https://express-validator.github.io/docs/)
+* Ejemplos con [zod](https://zod.dev)
+
+### Loggers
+* ¿Qué eso y para que sirven?
+* Creamos nuestro propio logger
+* ¿Cómo usar el logger manager de morgan?
 
 ### Session de usuarios
-* `35` - JWT (Json Web Tokens)
-* `36` - Como generar nuestro token
-* `37` - Como validar nuestro token
-* `38` - Rutas de autentificación
-* `39` - Rutas privadas
-* `40` - `passport` + `passport-jwt` para validar las rutas privadas
+* [JWT](https://jwt.io) (Json Web Tokens)
+* Como generar nuestro token
+* Como validar nuestro token
+* Rutas de autentificación
+* Rutas privadas
+* [passport](http://www.passportjs.org) + [passport-jwt](http://www.passportjs.org/packages/passport-jwt/) para validar las rutas privadas
+* Verificar el token y uso de la blacklist
+
+### Hablemos sobre seguridad
+* ¿Qué tan importante es?
+* No dar información de más
+* Limitar las peticiones
+* Banneo de IPs
 
 ### Versionamiento del código
-* `41` - `Git` + `Github`
-* `42` - ¿Cómo hacer un commit en condiciones?
-* `43` - Manejo de distintas ramas
+* [Git](https://git-scm.com) + [Github](https://github.com)
+* ¿Cómo hacer un commit en condiciones?
+* Manejo de distintas ramas
 
 ### Pruebas automatizadas
-* `44` - Testing
-* `45` - `Jest`
-* `46` - Jest + `Supertest`
+* Introducción al testing
+* [Jest](https://jestjs.io)
+* Jest + [Supertest](https://www.npmjs.com/package/supertest)
 
 ### Vayámos más allá
-* `47` - ¿Qué es `Typescript`?
-* `48` - Pasamos el proyecto a typescript
+* ¿Qué es [TypeScript](https://www.typescriptlang.org)?
+* Curso básico sobre TypeScript
+* ¿Debémos usar JavaScript o TypeScript?
+* Pasamos el proyecto a TypeScript
 
 ### Proyecto a producción
-* `49` - Hablamos sobre deploy
-* `50` - ¿Por qué NO usar Heroku?
-* `51` - Alternativas a Heroku
-* `52` - Deploy del proyecto
+* Hablemos sobre deploy
+* ¿Por qué NO usar Heroku?
+* Alternativas a Heroku
+* Deploy del proyecto
 
 ### ¿Clean [Architecture](https://clean-architecture-python.readthedocs.io/en/latest/fundamentos/index.html#solid)?
-* `53` - Código limpio
-* `54` - Código escalable
-* `55` - Ejemplos
+* Código limpio
+* Código escalable
+* Ventajas y Desventajas
+* Ejemplos
 
 ### ¿Principios SOLID?
-* `56` - ¿Qué es [SOLID](https://profile.es/blog/principios-solid-desarrollo-software-calidad/) y en que me beneficia?
-* `57` - ¿Valen la pena?
-* `58` - Ejemplos
+* ¿Qué es [SOLID](https://profile.es/blog/principios-solid-desarrollo-software-calidad/) y en que me beneficia?
+* ¿Valen la pena?
+* Ejemplos
 
 ### El framework de NestJS
-* `59` - ¿Qué es [NestJS](https://nestjs.com)?
-* `60` - Conozcamos a [@nestjs/cli](https://www.npmjs.com/package/@nestjs/cli)
+* ¿Qué es [NestJS](https://nestjs.com)?
+* Conozcamos a [@nestjs/cli](https://www.npmjs.com/package/@nestjs/cli)
+* Hacemos nuestra primer api rest con NestJS
+* Validamos los datos del body
+* Utilizamos mongoose con NestJS
+* Hacemos inicio de sesión con JWT
