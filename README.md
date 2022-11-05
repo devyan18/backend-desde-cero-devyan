@@ -5,6 +5,8 @@ Si le hacemos esa pregunta a google nos responde con esto:
 
 De la anterior cita, por el momento, solo nos interesa la parte en la dice 'multiplataforma' lo cuál significa que nodejs puede ser ejecutado en cualquier tipo de dispositivo, a diferencia del JavaScript del navegador que, valga la redundancia, solo se puede ejecutar en navegadores y no en todos funcionan de la misma forma. Tener en cuenta lo anterior será muy útil para el desarrollo de este curso.
 
+> Cabe aclarar que durante el curso no se verán en profundidad todos los aspectos que engloban a NodeJS, solo las funcionalidades que sean necesarias para el curso en cuestión. Si quieren más información, la pueden encontrar en la documentación oficial.
+
 Vayámos directo al grano, tal vez si llegaste a este curso ya tienes una idea de lo que es y para lo que sirve, asi que no voy a darle más vueltas.
 
 Primero que nada tenemos que instalar el runtime de nodejs.
@@ -78,7 +80,7 @@ Type ".help" for more information.
 ```
 Esto es el REPL (Read-Eval-Print-Loop) de Node JS la cuál es una herramienta de cónsola que te permite evaluar declaraciones en JavaScript y ver sus resultados inmediatamente.
 
-Por ejemplo, si hacemos una operación matemática com una suma, nos responderá con el resultado.
+Por ejemplo, si hacemos una operación matemática como una suma, nos responderá con el resultado.
 
 ```
 Welcome to Node.js v18.11.0.
@@ -88,5 +90,79 @@ Type ".help" for more information.
 >
 ```
 
-Si bien esta herramienta es útil en muchos casos, en este curso no profundizaremos tanto en ella, pero es útil saber que existe y como se llama por si quieren buscar más información en un futuro.
+> Si bien esta herramienta es útil en muchos casos, en este curso no profundizaremos tanto en ella, pero es útil saber que existe y como se llama por si quieren buscar más información en un futuro.
 
+# ¿Cómo usar en npm?
+
+Primero, antes de seguir con el curso, me gustaría pedirles que creen una carpeta donde guarden todos los archivos que creemos, ya que serán muchos, luego en la consola navegaremos a dicha carpeta o directorio.
+
+```bash
+cd /directorio/de/la/carpeta
+```
+
+> Procuren que la carpeta este vacía.
+
+Una vez en el directorio, crearemos nuestro primer archivo, para ello existen muchas formas, pero como este curso es para personas con cierta cancha con JS asumo que ya usarán un editor de código, de lo contrario, podrán crearlo en sistemas UNIX con:
+
+> Es importante que tenga la extensión .js
+
+```bash
+touch archivo.js
+```
+
+Una vez creado, procederemos a escribir algún código común de JS que muestre algo por consola como por ejemplo:
+
+```js
+console.log("Hello World");
+```
+
+Una vez editado, guardaremos el archivo y procederemos a escribir lo siguiente en la consola o terminal.
+
+```cmd
+node archivo.js
+```
+Si vemos el mensaje que escribimos en el console.log del archivo como respuesta, felicidades! Ya hiciste tu primer "Hola mundo" con nodejs
+
+> Hello World
+
+Genial! Ya podemos usar JS fuera del navegador, pero, ¿Cómo puedo usar npm?
+
+Para poder hacer uso del manejador de paquetes, primero debemos inicializar un proyecto con npm.
+
+Para ello, en la misma carpeta podemos ejecutar el siguiente comando:
+
+```cmd
+npm init
+```
+Esto iniciará una serie de preguntas sobre el proyecto, pero podemos hacer que npm use su configuración por defecto agregando la bandera --yes o -y de la siguiente manera:
+
+```cmd
+npm init -y
+```
+
+La terminal o consola nos debería responder con el siguiente mensaje:
+
+```
+Wrote to /directorio/de/la/carpeta/package.json:
+```
+
+Al hacer eso se nos abrá creado un archivo llamado `package.json` en el directorio el que ejecutamos el comando.
+
+Si entramos en el archivo veremos la siguiente estructura:
+
+```json
+{
+  "name": "carpeta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "archivo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+
+Este es el package.json, el archivo que nos va a servir para organizar nuestras librerias o dependencias.
